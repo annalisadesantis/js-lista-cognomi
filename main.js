@@ -14,8 +14,9 @@ do {
     if (!isNaN(cognome_utente)) {
         alert("Hai inserito un numero");
     }
+
     if (cognome_utente == cognome_utente.toLowerCase()) {
-        alert("Inserisci l'iniziale del tuo cognome in maiuscolo");
+        alert("Inserisci il tuo cognome con la prima lettera in maiuscolo");
     }
 } while (!isNaN(cognome_utente) || cognome_utente == cognome_utente.toLowerCase());
 
@@ -61,7 +62,10 @@ console.log("Il tuo cognome si trova nella posizione numero " + posizione);
 // var posizione
 //
 // for (var i = 0; i < cognomi.length; i++) {
-//     posizione = cognomi.indexOf(cognome_utente) + 1;
+//
+//     if (cognome_utente == cognomi[i]) {
+//         posizione = i + 1;
+//     }
 // }
 //
 // console.log("Il tuo cognome si trova nella posizione numero " + posizione);
