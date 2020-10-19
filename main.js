@@ -7,6 +7,7 @@
 var cognomi = ["Rossi", "Bianchi", "Ferrari", "Russo", "Esposito", "Martini", "Galli", "Leone", "Carli", "Sanna", "Adda"]
 
 // Chiedere all'utente il suo cognome e inserirlo nella lista dei cognomi.
+
 var cognome_utente
 
 do {
@@ -35,7 +36,6 @@ cognomi.sort();
 console.log(cognomi);
 
 
-
 // Soluzione 2 - Chiedere all'utente il suo cognome e inserirlo nella lista dei cognomi.
 
 // var cognome_utente = [prompt("Inserisci il tuo cognome")];
@@ -49,15 +49,17 @@ console.log(cognomi);
 // console.log(cognomi);
 
 
-// Comunicare all'utente la posizione in cui si trova il suo cognome
 
+
+// Comunicare all'utente la posizione in cui si trova il suo cognome
 
 var posizione = cognomi.indexOf(cognome_utente) + 1;
 console.log("Il tuo cognome si trova nella posizione numero " + posizione);
 
 
-// Soluzione 2 Comunicare all'utente la posizione in cui si trova il suo cognome
 
+
+// Soluzione 2 Comunicare all'utente la posizione in cui si trova il suo cognome
 
 // var posizione
 //
