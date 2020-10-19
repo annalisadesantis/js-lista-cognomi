@@ -7,8 +7,19 @@
 var cognomi = ["Rossi", "Bianchi", "Ferrari", "Russo", "Esposito", "Martini", "Galli", "Leone", "Carli", "Sanna", "Adda"]
 
 // Chiedere all'utente il suo cognome e inserirlo nella lista dei cognomi.
+var cognome_utente
 
-var cognome_utente = prompt("Inserisci il tuo cognome");
+do {
+    cognome_utente = prompt("Inserisci il tuo cognome");
+    if (!isNaN(cognome_utente)) {
+        alert("Hai inserito un numero");
+    }
+    if (cognome_utente == cognome_utente.toLowerCase()) {
+        alert("Inserisci l'iniziale del tuo cognome in maiuscolo");
+    }
+} while (!isNaN(cognome_utente) || cognome_utente == cognome_utente.toLowerCase());
+
+
 
 // Inserisco il cognome dell'utente nell'array
 
@@ -37,7 +48,7 @@ console.log(cognomi);
 // console.log(cognomi);
 
 
-// Comunicare all'utente la posizione in cui si trova il suo cognome 
+// Comunicare all'utente la posizione in cui si trova il suo cognome
 
 
 var posizione = cognomi.indexOf(cognome_utente) + 1;
@@ -51,7 +62,6 @@ console.log("Il tuo cognome si trova nella posizione numero " + posizione);
 //
 // for (var i = 0; i < cognomi.length; i++) {
 //     posizione = cognomi.indexOf(cognome_utente) + 1;
-//
 // }
 //
 // console.log("Il tuo cognome si trova nella posizione numero " + posizione);
